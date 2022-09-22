@@ -9,25 +9,36 @@
   <link rel="stylesheet" href="bootrap.css">
 </head>
 <body>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <script src="bootrap.js"></script>
   <h1 style="background-color: rgb(62, 50, 158);">Phạm Ngọc Tùng-B19DCDT209</h1>
   
   <div class="row">
-    <div class="col p-4  border" id="col1">
+    <div class="col-sm-4 p-4  border" id="col1">
         Nhiệt độ <br>
 		<input id="box1" onchange="doimau1()" style="text-align: center"> <br> °C
     </div>
-    <div class="col p-4 border" id="col2">
+    <div class="col-sm-4 p-4 border" id="col2">
         Độ ẩm <br>
 		<input id="box2" onchange="doimau2()" style="text-align: center"> <br> %
     </div>
-    <div class="col p-4  border" id="col3">
+    <div class="col-sm-4 p-4  border" id="col3">
         Lượng mưa <br>
             <input id="box3" onchange="doimau3()" style="text-align: center"> <br> mm
     </div>
+    
     </div>
     <div class="row">
-    <div id="box4" class="col-8 p-5   border"></div>
+    <div id="box4" class="col-8    border">
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+            
+          </figure>
+    </div>
     <div id="box5" class="col-4    border">
         <div id="nut1" class="col-xxl-12 p-5 my-5   border">
             <div class="btn-group" >
@@ -36,12 +47,7 @@
                 
             </div>
         </div>
-        <div  class="col-xxl-12 p-5 my-5  border">
-            <label class="toggle" for="myToggle">
-                <input class="toggle__input" name="" type="checkbox" id="myToggle"  >
-                <div class="toggle__fill"  ></div>
-            </label>
-        </div>
+        
     </div>
     </div>
     </div>
